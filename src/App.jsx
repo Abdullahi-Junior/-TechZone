@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import ProductDetails from './pages/ProductDetails'
 import AdminLogin from './pages/admin/login'
 import AdminDashboard from './pages/admin/Dashboard'
-import ManageReservations from './pages/admin/manageReservations'
+import ManageReservations from './pages/admin/ManageReservations'
 import ManageProducts from './pages/admin/ManageProducts'
 import ManageCategories from './pages/admin/ManageCategories'
 

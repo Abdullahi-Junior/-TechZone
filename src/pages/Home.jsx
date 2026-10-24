@@ -1,4 +1,4 @@
- 
+
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getProducts } from '../services/products'
@@ -76,23 +76,12 @@ export default function Home() {
                   : 'Out of Stock'}
               </p>
 
-              <div style={styles.buttonGroup}>
-                <Link
-                  to={`/product/${product.slug}`}
-                  style={styles.detailsButton}
-                >
-                  View Details
-                </Link>
-
-                {product.stock_quantity > 0 && (
-                  <Link
-                    to={`/product/${product.slug}`}
-                    style={styles.reserveButton}
-                  >
-                    Reserve Now
-                  </Link>
-                )}
-              </div>
+              <Link
+                to={`/product/${product.slug}`}
+                style={styles.button}
+              >
+                View Details
+              </Link>
             </div>
           </div>
         ))}
@@ -134,31 +123,18 @@ const styles = {
     color: 'red',
     fontWeight: 'bold',
   },
-  buttonGroup: {
-    display: 'flex',
-    gap: '0.5rem',
-    marginTop: '1rem',
-  },
-  detailsButton: {
-    flex: 1,
-    padding: '0.75rem',
-    backgroundColor: '#f3f4f6',
-    color: '#333',
-    border: '1px solid #ddd',
-    borderRadius: '4px',
-    textAlign: 'center',
-    textDecoration: 'none',
-    fontWeight: '600',
-  },
-  reserveButton: {
-    flex: 1,
+  button: {
+    display: 'block',
+    width: '100%',
+    boxSizing: 'border-box',
     padding: '0.75rem',
     backgroundColor: '#2563eb',
     color: 'white',
     border: 'none',
     borderRadius: '4px',
+    cursor: 'pointer',
+    marginTop: '1rem',
     textAlign: 'center',
     textDecoration: 'none',
-    fontWeight: '600',
   },
 }

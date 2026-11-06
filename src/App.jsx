@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Home from './pages/Home'
+import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
-import AdminLogin from './pages/admin/login'
+import AdminLogin from './pages/admin/Login'
 import AdminDashboard from './pages/admin/Dashboard'
 import ManageReservations from './pages/admin/ManageReservations'
 import ManageProducts from './pages/admin/ManageProducts'
@@ -19,6 +20,16 @@ function App() {
             <Navbar />
             <main style={{ flex: 1 }}>
               <Home />
+            </main>
+            <Footer />
+          </>
+        } />
+        
+        <Route path="/products" element={
+          <>
+            <Navbar />
+            <main style={{ flex: 1 }}>
+              <Products />
             </main>
             <Footer />
           </>

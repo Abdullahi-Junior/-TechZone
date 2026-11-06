@@ -8,3 +8,37 @@ body {
   background-color: #fafafa;
   color: #333;
 }
+/* Navbar Responsive Styles */
+@media (max-width: 768px) {
+  /* Hide desktop links on mobile */
+  nav > div:nth-child(2) { 
+    display: none !important; 
+  }
+  
+  /* Show hamburger button on mobile */
+  button[aria-label="Toggle menu"] {
+    display: block !important;
+  }
+
+  /* Make hero title smaller on mobile */
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  /* Make product grids 1 column on mobile */
+  div[style*="gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))'"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+/* Hide the drawer button on desktop (screens wider than 768px) */
+@media (min-width: 769px) {
+  button[style*="backgroundColor: 'rgb(31, 41, 55)'"] {
+    display: none !important;
+  }
+}
+/* Hide the drawer button on desktop - it's redundant with the dropdown */
+@media (min-width: 769px) {
+  .mobile-only-drawer {
+    display: none !important;
+  }
+}

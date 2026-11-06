@@ -40,15 +40,15 @@ export default function Contact() {
         <div style={styles.infoCard}>
           <h3 style={styles.infoTitle}>📍 Visit Our Store</h3>
           <p style={styles.infoText}>
-            123 Electronics Market Road,<br />
-            Computer Village, Ikeja, Lagos, Nigeria
+            123 Electronics ,<br />
+            Katsina 820101, Katsina, Nigeria
           </p>
         </div>
         <div style={styles.infoCard}>
           <h3 style={styles.infoTitle}>🕒 Working Hours</h3>
           <p style={styles.infoText}>
             Monday - Saturday: 8:00 AM - 6:00 PM<br />
-            Sunday: 10:00 AM - 4:00 PM
+            Sunday: 10:00 AM - 7:00 PM
           </p>
         </div>
       </div>

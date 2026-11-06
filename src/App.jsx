@@ -4,6 +4,7 @@ import Footer from './components/layout/Footer'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
+import Contact from './pages/Contact' // <-- ADD THIS
 import AdminLogin from './pages/admin/Login'
 import AdminDashboard from './pages/admin/Dashboard'
 import ManageReservations from './pages/admin/ManageReservations'
@@ -40,6 +41,16 @@ function App() {
             <Navbar />
             <main style={{ flex: 1 }}>
               <ProductDetails />
+            </main>
+            <Footer />
+          </>
+        } />
+
+        <Route path="/contact" element={ // <-- ADD THIS ROUTE
+          <>
+            <Navbar />
+            <main style={{ flex: 1 }}>
+              <Contact />
             </main>
             <Footer />
           </>
